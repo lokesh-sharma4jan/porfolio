@@ -1305,3 +1305,367 @@ textarea:focus {
     transform: translateY(-3px) scale(1.05);
     box-shadow: var(--shadow-hover);
 }
+
+/* ========================================
+   NEW SECTIONS - FAANG/L5 ENHANCEMENTS
+   ======================================== */
+
+/* Hero Highlights */
+.hero-highlights {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.highlight-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.highlight-item i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.highlight-item span {
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* System Design Section */
+.system-design {
+    background: var(--bg-light);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-light);
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.architecture-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.architecture-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.arch-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.arch-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.architecture-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.arch-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.arch-tag {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.arch-description {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.arch-details {
+    list-style: none;
+    padding: 0;
+}
+
+.arch-details li {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.arch-details li:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.arch-details strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Design Principles */
+.design-principles {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.design-principles h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-color);
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.principle-item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.principle-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(236, 72, 153, 0.05));
+}
+
+.principle-item i {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.principle-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.principle-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Technical Leadership Section */
+.leadership {
+    background: white;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.impact-category {
+    background: var(--bg-light);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.impact-category:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.impact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.impact-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.impact-category h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.impact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.impact-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.impact-metric {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    min-width: 120px;
+    flex-shrink: 0;
+}
+
+.impact-desc {
+    flex: 1;
+}
+
+.impact-desc strong {
+    display: block;
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.impact-desc p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Achievements Banner */
+.achievements-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 3rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.achievements-banner h3 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+    color: white;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.achievement:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(8px);
+}
+
+.achievement i {
+    font-size: 1.5rem;
+    color: #10B981;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.achievement p {
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.achievement strong {
+    color: white;
+    font-weight: 600;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .architecture-grid,
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-highlights {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .impact-metric {
+        font-size: 2rem;
+        min-width: 90px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

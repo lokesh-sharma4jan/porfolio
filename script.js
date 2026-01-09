@@ -62,11 +62,12 @@ navLinks.forEach((link) => {
 
 // Typing effect for hero section
 const roles = [
-  "Senior Java Developer",
-  "AWS Cloud Expert",
-  "Microservices Architect",
-  "Backend Specialist",
-  "Problem Solver",
+  "Senior Backend Engineer",
+  "Distributed Systems Architect",
+  "Microservices Expert",
+  "Cloud-Native Developer",
+  "System Design Specialist",
+  "Performance Engineer",
 ];
 let roleIndex = 0;
 let charIndex = 0;
